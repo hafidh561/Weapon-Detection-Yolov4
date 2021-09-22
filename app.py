@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import argparse
+import mimetypes
 
 source_img = "./test_images/weapon0.jpg"
 confidence_thershold = 0.1
@@ -61,6 +62,12 @@ height_model = value_parser.height_model
 config_path = value_parser.config
 weights_path = value_parser.weights
 
+# Check Source Img
+mimestart = mimetypes.guess_type(value_parser.source_img)[0]
+if mimestart != None:
+    mimestart = mimestart.split("/")[0]
+    if mimestart not in ["image"]:
+        raise "Input image source correctly!"
 
 def find_objects(outputs, img, confidence_thershold, nms_threshold):
     hT, wT, cT = img.shape

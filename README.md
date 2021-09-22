@@ -127,7 +127,7 @@ $ docker run --rm -e DISPLAY=$DISPLAY hafidh561/weapon-detection-yolov4:1.0
 
 ## Give It a Try
 
-If you want make your own deep learning for object detection? Give it a try in this [Google Colab](https://github.com/hafidh561/Weapon-Detection-Yolov4.git/blob/main/jupyter_notebook/train_model.ipynb)
+If you want make your own deep learning for object detection? Give it a try in this [Google Colab](https://colab.research.google.com/github/hafidh561/Weapon-Detection-Yolov4/blob/main/jupyter_notebook/train_model.ipynb)
 
 ## License
 
