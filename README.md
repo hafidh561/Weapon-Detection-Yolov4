@@ -23,6 +23,7 @@ $ python download_model.py
 
 ```bash
 # Newest docker version
+# Make sure put your test images in directory ./test_images
 $ docker build -t hafidh561/weapon-detection-yolov4:1.0 .
 ```
 
@@ -119,11 +120,11 @@ $ docker run --rm -e DISPLAY=$DISPLAY hafidh561/weapon-detection-yolov4:1.0
 
 #### Example
 
-![result0](./test_images/result0.png)
+![result0](./screenshots/result0.png)
 
-![result1](./test_images/result1.png)
+![result1](./screenshots/result1.png)
 
-![result2](./test_images/result2.png)
+![result2](./screenshots/result2.png)
 
 ## Give It a Try
 

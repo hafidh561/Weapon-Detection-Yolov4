@@ -12,6 +12,9 @@ apt-get install tk -y
 # Copy all files into working directory
 COPY app.py download_model.py requirements.txt yolov4-custom_last.weights /home/app/
 
+# Copy test images
+COPY test_images/ /home/app/
+
 # Instal python libraries
 RUN pip install -r requirements.txt
 
