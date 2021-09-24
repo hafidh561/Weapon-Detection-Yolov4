@@ -86,7 +86,7 @@ $ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 ```
 
 ```bash
-$ docker run --rm -e hafidh561/weapon-detection-yolov4:1.0 -h
+$ docker run --rm -e DISPLAY=<your local ip address>:0 hafidh561/weapon-detection-yolov4:1.0 -h
 usage: app.py [-h] [-s SOURCE_IMG] [-c CONFIDENCE] [-n NMS] [-cls CLASS_NAMES [CLASS_NAMES ...]] [-cfg CONFIG] [-w WEIGHTS] [-wm WIDTH_MODEL]
               [-hm HEIGHT_MODEL]
 
