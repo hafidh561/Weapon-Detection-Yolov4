@@ -23,7 +23,7 @@ $ python download_model.py
 
 ```bash
 # Newest docker version
-# Make sure put your test images in directory ./test_images
+# Make sure put your test images in directory ./test_images/
 $ docker build -t hafidh561/weapon-detection-yolov4:1.0 .
 ```
 
