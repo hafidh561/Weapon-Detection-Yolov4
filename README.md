@@ -2,7 +2,7 @@
 
 ## Description
 
-Weapon detection using yolov4 model with GUI application based. <br>
+Weapon detection using yolov4 model with GUI application based. \
 You can use this code for another object detection, but you must have a class names, config, weights and height weight model.
 
 ## Installation
@@ -72,7 +72,7 @@ $ python app.py -s test_images/weapon0.jpg -c 0.1 -n 0.2 -cls Weapon -cfg yolov4
 $ xhost +local:docker
 
 # When you finish, you can return the access control by using the following
-$ # xhost -local:docker
+$ xhost -local:docker
 
 # Add environment variables
 $ XSOCK=/tmp/.X11-unix
@@ -86,7 +86,7 @@ $ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 ```
 
 ```bash
-$ docker run --rm -e DISPLAY=<your local ip address>:0 hafidh561/weapon-detection-yolov4:1.0 -h
+$ docker run --rm -e DISPLAY=<YOUR LOCAL IP ADDRESS>:0 hafidh561/weapon-detection-yolov4:1.0 -h
 usage: app.py [-h] [-s SOURCE_IMG] [-c CONFIDENCE] [-n NMS] [-cls CLASS_NAMES [CLASS_NAMES ...]] [-cfg CONFIG] [-w WEIGHTS] [-wm WIDTH_MODEL]
               [-hm HEIGHT_MODEL]
 
@@ -112,7 +112,7 @@ optional arguments:
 $ docker run --rm -e DISPLAY=192.168.0.2:0 hafidh561/weapon-detection-yolov4:1.0 -s test_images/weapon0.jpg -c 0.1 -n 0.2 -cls Weapon -cfg yolov4-custom.cfg -w yolov4-custom_last.weights -wm 416 -hm 416
 
 # For Operating System Windows
-$ docker run --rm -e DISPLAY=<your local ip address>:0 hafidh561/weapon-detection-yolov4:1.0
+$ docker run --rm -e DISPLAY=<YOUR LOCAL IP ADDRESS>:0 hafidh561/weapon-detection-yolov4:1.0
 
 # For Operating System Linux
 $ docker run --rm -e DISPLAY=$DISPLAY hafidh561/weapon-detection-yolov4:1.0
