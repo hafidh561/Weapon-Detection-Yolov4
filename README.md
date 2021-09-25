@@ -3,7 +3,7 @@
 ## Description
 
 Weapon detection using yolov4 model with GUI application based. \
-You can use this code for another object detection, but you must have a class names, config, weights and height weight model.
+You can use this code for another object detection, but you must have a class names, config, weights and height width model.
 
 ## Installation
 
